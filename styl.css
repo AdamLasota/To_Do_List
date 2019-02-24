@@ -1,0 +1,191 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgba(0,14,238,0.3);
+    font-size: 25px;
+    transition: 0.2s;
+	font-family: 'Indie Flower', cursive;
+	color:#17eb17;
+	opacity:1;
+	font-weight:700;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+      background-color: rgba(0, 13, 221, 0.6);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #fa2a39;
+	opacity:0.4;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the header */
+.header {
+	
+    background:url(tlo.jpg) no-repeat;
+	background-position:cover;
+    padding: 30px 40px;
+    text-align: center;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	border-color:green;
+	border-left-style:solid;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header h2{
+	color:black;
+	font-family: 'Indie Flower', cursive;
+	font-size:40px;
+	text-align:center;
+	text-transform:uppercase;
+	text-shadow: 15px 15px 7px rgba(150, 150, 150, 1);
+}
+
+
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 100px;
+    width: 70%;
+    padding: 10px;
+    float: left;
+    font-size: 20px;
+	 transition: 0.3s;
+	border-style:solid;
+	border-color:#22a043;
+    border-radius: 100px;
+	webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+input:focus{
+	box-shadow: 0 30px 10px -10px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	font-size:20px;
+}
+
+/* Style the "Add" button */
+
+.addBtn {
+    padding: 10px;
+    width: 20%;
+	margin-left:4%;
+	font-size:20px;
+	color:#22a043;
+    background: #FFFFFF;
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+	border-style:solid;
+	border-color:#22a043;
+    border-radius: 100px;
+	webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+
+.addBtn:hover {
+   box-shadow: 0 30px 10px -10px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	font-size:20px;
+}
+.addBtn:active{
+	 border-width:0;
+    border-color:rgba(0,0,0,0.5);
+	background:green;
+	transition:0.2s;
+	color:red;
+}
+
+.mainContainer{
+	display:block;
+	width:70%;
+	border-bottom-style:solid;
+	border-color:green;
+	border-left-style:solid;
+	margin-left:auto;
+	margin-right:auto;
+	background:url(tlo2.jpg) no-repeat;
+	background-size:cover;
+	box-shadow: 0 30px 10px -10px rgba(0, 0, 0, 0.5);
+}
+.empty{
+	font-family: 'Indie Flower', cursive;
+	font-size:40px;
+	color:red;
+	text-align:center;
+}
+}
